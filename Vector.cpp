@@ -8,7 +8,6 @@ Vector::Vector()
     x_component = 0;
     y_component = 0;
     magnitude = 0;
-    std::cout << "Vector Object Generated" << std::endl;
 }
 
 Vector::Vector(double x, double y)
@@ -16,7 +15,6 @@ Vector::Vector(double x, double y)
     x_component = x;
     y_component = y;
     magnitude = sqrt((x * x) + (y * y));
-    std::cout << "Vector Object Generated" << std::endl;
 }
 
 
@@ -36,8 +34,15 @@ double Vector::getMagnitude()
     return magnitude;
 }
 
-
-bool isValidVector()
+// Setter Methods
+void Vector::setXComponent(double x)
 {
-    
+    x_component = x;
+    magnitude = sqrt((x_component * x_component) + (y_component * y_component));
+}
+
+void Vector::setYComponent(double y)
+{
+    y_component = y;
+    magnitude = sqrt((x_component * x_component) + (y_component * y_component));
 }

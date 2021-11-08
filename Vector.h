@@ -18,8 +18,10 @@ public:
     double getMagnitude();
 
     // Setter methods
+    void setXComponent(double);
+    void setYComponent(double);
 
-    bool isValidVector();
+
 };
 
 
