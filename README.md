@@ -1,2 +1,2 @@
 # Mechanix
- Physics library containing functions for the caclculation of Newtonian mechanics
+ Physics library containing functions for the calculation of Newtonian mechanics...
